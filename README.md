@@ -1,3 +1,3 @@
-# the redy doc
+# redy doc
 
-This is the official document repository of the redy programming language.
+WIP
