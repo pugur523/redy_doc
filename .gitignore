@@ -1,0 +1,72 @@
+# Binary and object files
+*.o
+*.obj
+*.so
+*.dylib
+*.dll
+*.exe
+*.out
+*.app
+*.a
+*.lib
+
+# Temporary files
+*~
+*.swp
+*.swo
+.netrwhist
+[._]*.un~
+.fuse_hidden*
+.nfs*
+nohup.out
+
+# Log and cache files
+*.log
+*.profraw
+*.cache
+*.d
+__pycache__
+.pytest_cache/
+.mypy_cache/
+
+# Editor and IDE configurations
+.vscode/
+.idea/
+*.suo
+*.user
+*.vcxproj.user
+compile_commands.json
+Session.vim
+Sessionx.vim
+tags
+
+# Virtual environments
+*venv/
+
+# Operating System specific files
+.DS_Store
+.directory
+.Trash-*
+*:Zone.Identifier
+
+# C/C++
+out/
+*.gch
+*.pch
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+Testing/
+
+# Rust
+target/
+Cargo.lock
+
+# Python
+dist/
+build/
+*.pyc
+
+# Docs
+site/

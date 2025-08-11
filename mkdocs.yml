@@ -1,0 +1,52 @@
+site_name: redy doc
+site_url: https://pugur.github.io/redy_doc/
+nav:
+  - index.md
+  - install.md
+  - Cording Tutorials:
+    - Hello World: tutorials/0001_helloworld.md
+    - Data Types and Variables: tutorials/0002_data_types_and_variables.md
+    - Print Formatted: tutorials/0003_print_formatted.md
+    - Simple Fizz Buzz Program: tutorials/0004_simple_fizz_buzz_program.md
+
+docs_dir: src
+theme:
+  name: material
+  language: en
+  features:
+    - content.code.copy
+    - content.code.select
+
+extra_css:
+  - assets/css/style.css
+
+extra_javascript:
+  - assets/js/copy_button.js
+
+plugins:
+  - search:
+  - i18n:
+      languages:
+        - locale: en
+          default: true
+          name: English
+          build: true
+        - locale: ja
+          name: 日本語
+          build: true
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: #
+  - pymdownx.highlight:
+      use_pygments: true
+      pygments_lang_class: true
+      line_spans: __span
+      anchor_linenums: true
+      auto_title: false
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tasklist:
+      custom_checkbox: true
+      clickable_checkbox: true
