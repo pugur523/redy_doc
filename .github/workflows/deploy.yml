@@ -9,6 +9,7 @@ on:
       - "/mkdocs.yml"
       - "/pyproject.toml"
       - "/uv.lock"
+      - ".github/workflows/*.yml"
   workflow_dispatch:
 
 permissions:
@@ -36,10 +37,11 @@ jobs:
         with:
           python-version: '3.13'
 
-      - name: Install uv and Python dependencies
+      - name: Install uv
         uses: astral-sh/setup-uv@v6
-        run: |
-          uv sync
+
+      - name: Install Python dependencies
+        run: uv sync
         shell: bash
 
       - name: Build and deploy to GitHub Pages
