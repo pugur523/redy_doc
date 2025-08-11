@@ -36,27 +36,13 @@ jobs:
         with:
           python-version: '3.13'
 
-      - name: Cache dependencies
-        run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV
-
-      - name: Cache MkDocs
-        uses: actions/cache@v4
-        with:
-          key: mkdocs-material-${{ env.cache_id }}
-          path: .cache
-          restore-keys: |
-            mkdocs-material-
-
-      - name: Install dependencies
+      - name: Install uv and Python dependencies
+        uses: astral-sh/setup-uv@v6
         run: |
-          pip install --upgrade pip
-          pip install mkdocs
-          pip install mkdocs-material
-          pip install mkdocs-git-revision-date-localized-plugin
-          pip install mkdocs-minify-plugin
-          pip install mkdocs-static-i18n
+          uv sync
+        shell: bash
 
       - name: Build and deploy to GitHub Pages
-        run: cd docs && mkdocs gh-deploy --force --clean --verbose
+        run: uv run mkdocs gh-deploy --force --clean --verbose
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
