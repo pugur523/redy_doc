@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+        <loc>https://pugur.github.io/redy_doc/</loc>
+        <lastmod>2025-08-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://pugur.github.io/redy_doc/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://pugur.github.io/redy_doc/ja/"/>
+    </url>
+    <url>
+        <loc>https://pugur.github.io/redy_doc/install/</loc>
+        <lastmod>2025-08-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://pugur.github.io/redy_doc/install/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://pugur.github.io/redy_doc/ja/install/"/>
+    </url>
+    <url>
+        <loc>https://pugur.github.io/redy_doc/tutorials/0001_helloworld/</loc>
+        <lastmod>2025-08-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://pugur.github.io/redy_doc/tutorials/0001_helloworld/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://pugur.github.io/redy_doc/ja/tutorials/0001_helloworld/"/>
+    </url>
+    <url>
+        <loc>https://pugur.github.io/redy_doc/tutorials/0002_data_types_and_variables/</loc>
+        <lastmod>2025-08-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://pugur.github.io/redy_doc/tutorials/0002_data_types_and_variables/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://pugur.github.io/redy_doc/ja/tutorials/0002_data_types_and_variables/"/>
+    </url>
+    <url>
+        <loc>https://pugur.github.io/redy_doc/tutorials/0003_print_formatted/</loc>
+        <lastmod>2025-08-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://pugur.github.io/redy_doc/tutorials/0003_print_formatted/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://pugur.github.io/redy_doc/ja/tutorials/0003_print_formatted/"/>
+    </url>
+    <url>
+        <loc>https://pugur.github.io/redy_doc/tutorials/0004_simple_fizz_buzz_program/</loc>
+        <lastmod>2025-08-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://pugur.github.io/redy_doc/tutorials/0004_simple_fizz_buzz_program/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://pugur.github.io/redy_doc/ja/tutorials/0004_simple_fizz_buzz_program/"/>
+    </url>
+    <url>
+        <loc>https://pugur.github.io/redy_doc/ja/</loc>
+        <lastmod>2025-08-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://pugur.github.io/redy_doc/ja/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://pugur.github.io/redy_doc/"/>
+    </url>
+    <url>
+        <loc>https://pugur.github.io/redy_doc/ja/install/</loc>
+        <lastmod>2025-08-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://pugur.github.io/redy_doc/ja/install/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://pugur.github.io/redy_doc/install/"/>
+    </url>
+    <url>
+        <loc>https://pugur.github.io/redy_doc/ja/tutorials/0001_helloworld/</loc>
+        <lastmod>2025-08-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://pugur.github.io/redy_doc/ja/tutorials/0001_helloworld/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://pugur.github.io/redy_doc/tutorials/0001_helloworld/"/>
+    </url>
+    <url>
+        <loc>https://pugur.github.io/redy_doc/ja/tutorials/0002_data_types_and_variables/</loc>
+        <lastmod>2025-08-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://pugur.github.io/redy_doc/ja/tutorials/0002_data_types_and_variables/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://pugur.github.io/redy_doc/tutorials/0002_data_types_and_variables/"/>
+    </url>
+    <url>
+        <loc>https://pugur.github.io/redy_doc/ja/tutorials/0003_print_formatted/</loc>
+        <lastmod>2025-08-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://pugur.github.io/redy_doc/ja/tutorials/0003_print_formatted/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://pugur.github.io/redy_doc/tutorials/0003_print_formatted/"/>
+    </url>
+    <url>
+        <loc>https://pugur.github.io/redy_doc/ja/tutorials/0004_simple_fizz_buzz_program/</loc>
+        <lastmod>2025-08-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://pugur.github.io/redy_doc/ja/tutorials/0004_simple_fizz_buzz_program/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://pugur.github.io/redy_doc/tutorials/0004_simple_fizz_buzz_program/"/>
+    </url>
+</urlset>
