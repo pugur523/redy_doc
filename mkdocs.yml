@@ -12,6 +12,8 @@ nav:
 docs_dir: src
 theme:
   name: material
+  favicon: assets/theme/logo_r.svg
+  logo: assets/theme/logo_r.svg
   language: en
   features:
     - content.code.copy

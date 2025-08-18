@@ -94,6 +94,7 @@ html {
 .md-nav__title {
   color: rgb(230, 230, 230) !important;
   background: rgb(224, 64, 0) !important;
+  margin-top: var(--header-height);
 }
 
 .md-content {
@@ -289,7 +290,6 @@ html {
 }
 
 
-/* === Links === */
 .md-typeset a {
   color: var(--md-accent-fg-color);
   text-decoration: none;
