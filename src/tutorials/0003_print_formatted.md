@@ -18,7 +18,7 @@ redy main.ry
 # 3 + 2 is 5
 ```
 
-As you can see, we finally printed a value stored in `n`!<br/>
-Actually, `println#()` can be passed multiple arguments.<br/>
+As you can see, we finally printed a value stored in `n`!  
+Actually, `println#()` can be passed multiple arguments.  
 the first argument is called `format string`, and the arguments remaining after that are called `format args`.
 All brackets(`{}`) contained in the `format string` will be replaced by the `format args`.

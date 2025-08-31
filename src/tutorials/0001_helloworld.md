@@ -30,14 +30,14 @@ What does that hello world program mean is very simple to understand, let's go t
 
 > `fn main() {`
 
-The first line means that "**We will declare `function`(`fn`) named `main`**", and "**Start defining the content of the function(`{`)**".<br/>
+The first line means that "**We will declare `function`(`fn`) named `main`**", and "**Start defining the content of the function(`{`)**".  
 `function` in programming means typically something like a collection of processes.
 
 > `println#("Hello, World from redy!")`
 
 The next line is also simple, calling function* named `println#()` with argument `"Hello, World from redy!"`. `println#()` is provided function* that **print**s **l**i**n**e to the console, and we called it with single string argument. the characters surrounded by double quotation are considered as `literal string`, a set of the characters that can be handled at a time.
 
-Note that `println#()` is not a function actually, but it's a bit complicated to explain why now, so we'll come back to that later, just consider it as a function.<br/>
+Note that `println#()` is not a function actually, but it's a bit complicated to explain why now, so we'll come back to that later, just consider it as a function.  
 
 > `}`
 

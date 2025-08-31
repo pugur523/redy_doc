@@ -26,5 +26,5 @@ fn main() {
 }
 ```
 
-Once you compile and run this program, it will print out the values of these variables.<br/>
+Once you compile and run this program, it will print out the values of these variables.  
 Notice that **redy** can often **infer** the data type of a variable without you explicitly writing it, which makes your code cleaner.
