@@ -42,17 +42,23 @@ Install the required Python packages and set up a virtual environment.
 Installation Details
 </summary>
 
-  * Install **Python >= 3.13** from the [official website](https://www.python.org/downloads/).
-  * Install the **`uv`** package manager: `pip install uv`.
-  * Create and activate a virtual environment:
-    ```bash
-    uv venv
-    source .venv/bin/activate
-    ```
-  * Install the build dependencies:
-    ```bash
-    uv sync
-    ```
+1. Install Python(>= 3.13) from the <a href="https://www.python.org/downloads/">official website</a>.<br/>
+
+2. Install uv:<br/>
+```bash
+pip install uv.
+```
+
+3. Create and activate a virtual environment:<br/>
+```bash
+uv venv
+source .venv/bin/activate
+```
+
+4. Install the build dependencies:  
+```bash
+uv sync
+```
 
 </details>
 
@@ -72,15 +78,15 @@ sudo apt-get update
 sudo apt-get install -y wget curl ninja-build nasm nsis wine python3
 
 # Install CMake
-CMAKE_VERSION="4.0.3"
-cmake_url="[https://github.com/Kitware/CMake/releases/download/v$](https://github.com/Kitware/CMake/releases/download/v$){CMAKE_VERSION}/cmake-${CMAKE_VERSION}-linux-x86_64.sh"
+CMAKE_VERSION="4.1.1"
+cmake_url="https://github.com/Kitware/CMake/releases/download/v${CMAKE_VERSION}/cmake-${CMAKE_VERSION}-linux-x86_64.sh"
 wget -nv "${cmake_url}" -O cmake-installer.sh
 chmod +x cmake-installer.sh
 sudo ./cmake-installer.sh --skip-license --prefix=/usr/local
 rm cmake-installer.sh
 
 # Install LLVM
-LLVM_VERSION="20"
+LLVM_VERSION="21"
 wget -qOllvm.sh [https://apt.llvm.org/llvm.sh](https://apt.llvm.org/llvm.sh) && chmod +x llvm.sh && sudo ./llvm.sh $LLVM_VERSION all && rm ./llvm.sh
 
 source ./src/build/scripts/install_llvm_mingw.sh
@@ -115,11 +121,11 @@ yay -S --noconfirm libc++-with-libunwind
 
 ### Windows
 
-1.  Install [**Chocolatey**](https://chocolatey.org/install#individual).
-2.  Run the following command in an administrator PowerShell terminal:
-    ```powershell
-    choco install -y nsis ninja nasm cmake llvm
-    ```
+1. Install [**Chocolatey**](https://chocolatey.org/install#individual).
+2. Run the following command in an administrator PowerShell terminal:
+```powershell
+choco install -y nsis ninja nasm cmake llvm
+```
 
 ### macOS
 
@@ -139,7 +145,7 @@ nasm --version
 # Expected output: NASM version 2.16.03 compiled on May 13 2025
 
 cmake --version
-# Expected output: cmake version 4.0.3-dirty
+# Expected output: cmake version 4.1.1-dirty
 # CMake suite maintained and supported by Kitware ([kitware.com/cmake](https://kitware.com/cmake)).
 
 ninja --version
@@ -153,7 +159,7 @@ clang --version
 
 # For Linux only
 echo $LLVM_MINGW_DIR
-# Expected output: /opt/llvm-mingw-20250709-ucrt-ubuntu-22.04-x86_64
+# Expected output: /opt/llvm-mingw-20250826-ucrt-ubuntu-22.04-x86_64
 ```
 
 </details>
@@ -169,4 +175,3 @@ Execute the build script. This process may take 5 to 10 minutes, it's time for t
 Upon successful completion, the compiled artifacts will be located in the `./out/install/{os}/{arch}/release/bin/` directory.
 
 If you encounter any compilation errors, please double-check that all required tools and dependencies are installed and properly configured.
-
