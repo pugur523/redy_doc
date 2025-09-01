@@ -661,7 +661,7 @@
 
 
 <h1 id="_1">インストール</h1>
-<p>このガイドでは、<strong>redy</strong>のインストール手順を説明します。</p>
+<p>以下、<strong>redy</strong>のインストール手順を説明します。</p>
 <hr />
 <h2 id="1">1. ビルド済みバイナリのインストール (推奨)</h2>
 <p>TBW...</p>
@@ -673,50 +673,58 @@
 </ul>
 <hr />
 <h2 id="2">2. ソースコードからビルド</h2>
-<p><strong>redy</strong>をソースコードからビルドするには、以下の手順に従ってください。</p>
+<p>ソースコードからビルドするには、以下の手順に従ってください。</p>
 <h3 id="1_1">ステップ1: リポジトリをクローン</h3>
 <p>リポジトリとサブモジュールをクローンし、ディレクトリに移動します。</p>
 <pre><code class="language-bash">git clone --depth 1 --recursive [https://github.com/pugur523/redy.git](https://github.com/pugur523/redy.git)
 cd redy
 </code></pre>
 <h3 id="2_1">ステップ2: 依存関係のセットアップ</h3>
-<p><strong>redy</strong>にはPythonとシステムレベルの両方の依存関係が必要です。</p>
+<p><strong>redy</strong>のビルドに必要な依存関係を順を追ってインストールしていきます。</p>
 <h4 id="python">Pythonの依存関係</h4>
-<p>必要なPythonパッケージをインストールし、仮想環境をセットアップします。</p>
+<p>まずはPython関連からインストールし、あわせて仮想環境もセットアップします。</p>
 <details>
 <summary>
-インストール詳細
+詳しい手順
 </summary>
 
-  * [**Python >= 3.13**](https://www.python.org/downloads/)をインストールします。
-  * `uv`パッケージマネージャーをインストールします: `pip install uv`。
-  * 仮想環境を作成し、アクティベートします:
-    ```bash
-    uv venv
-    source .venv/bin/activate
-    ```
-  * ビルドに必要なPythonパッケージをインストールします:
-    ```bash
-    uv sync
-    ```
+1. Python(>= 3.13)を<a href="https://www.python.org/downloads/">公式サイト</a>の手順通りにインストールします。<br/>
+2. uvをインストールします:<br/>
+
+<pre><code class="language-bash">`pip install uv`
+</code></pre>
+
+
+3. 仮想環境を作成し、アクティベートします:<br/>
+
+<pre><code class="language-bash">uv venv
+source .venv/bin/activate
+</code></pre>
+
+
+4. ビルドに必要なPythonパッケージを同期してインストールします:<br/>
+
+<pre><code class="language-bash">uv sync
+</code></pre>
+
 
 </details>
 
 <h4 id="_3">システムの依存関係</h4>
-<p>必要なシステムの依存関係は、オペレーティングシステムによって異なります。</p>
+<p>必要なシステムの依存関係は、OSごとに異なります。</p>
 <details>
 <summary>
-インストール詳細
+詳しい手順
 </summary>
 
-### Ubuntu
+<b>Ubuntu</b>
 
 
 <pre><code class="language-bash">sudo apt-get update
 sudo apt-get install -y wget curl ninja-build nasm nsis wine python3
 
 # CMakeのインストール
-CMAKE_VERSION=&quot;4.0.3&quot;
+CMAKE_VERSION=&quot;4.1.1&quot;
 cmake_url=&quot;[https://github.com/Kitware/CMake/releases/download/v$](https://github.com/Kitware/CMake/releases/download/v$){CMAKE_VERSION}/cmake-${CMAKE_VERSION}-linux-x86_64.sh&quot;
 wget -nv &quot;${cmake_url}&quot; -O cmake-installer.sh
 chmod +x cmake-installer.sh
@@ -724,7 +732,7 @@ sudo ./cmake-installer.sh --skip-license --prefix=/usr/local
 rm cmake-installer.sh
 
 # LLVMのインストール
-LLVM_VERSION=&quot;20&quot;
+LLVM_VERSION=&quot;21&quot;
 wget -qOllvm.sh [https://apt.llvm.org/llvm.sh](https://apt.llvm.org/llvm.sh) &amp;&amp; chmod +x llvm.sh &amp;&amp; sudo ./llvm.sh $LLVM_VERSION all &amp;&amp; rm ./llvm.sh
 
 source ./src/build/scripts/install_llvm_mingw.sh
@@ -733,7 +741,7 @@ echo &quot;export LLVM_MINGW_DIR=${LLVM_MINGW_DIR}&quot; &gt;&gt; ~/.zshrc
 </code></pre>
 
 
-### Arch Linux
+<b>Arch Linux</b>
 
 
 <pre><code class="language-bash">pacman -S --noconfirm \
@@ -759,15 +767,16 @@ yay -S --noconfirm libc++-with-libunwind
 </code></pre>
 
 
-### Windows
+<b>Windows</b>
 
-1.  [**Chocolatey**](https://chocolatey.org/install#individual)をインストールします。
-2.  管理者権限のPowerShellターミナルで、次のコマンドを実行します。
-    ```powershell
-    choco install -y nsis ninja nasm cmake llvm
-    ```
+1. [**Chocolatey**](https://chocolatey.org/install#individual)をインストールします。
+2. 管理者権限のPowerShellターミナルで、次のコマンドを実行します。  
 
-### macOS
+<pre><code class="language-powershell">choco install -y nsis ninja nasm cmake llvm
+</code></pre>
+
+
+<b>macOS</b>
 
 
 <pre><code class="language-bash">brew update
@@ -777,7 +786,7 @@ echo 'export PATH=&quot;$(brew --prefix lld@20)/bin:$PATH&quot;' &gt;&gt; ~/.bas
 </code></pre>
 
 
-**確認**
+<b>確認</b>
 
 すべての必要なツールが正しくインストールされ、コマンドラインからアクセスできることを確認するために、以下のコマンドを実行します。
 
@@ -786,7 +795,7 @@ echo 'export PATH=&quot;$(brew --prefix lld@20)/bin:$PATH&quot;' &gt;&gt; ~/.bas
 # 期待される出力: NASM version 2.16.03 compiled on May 13 2025
 
 cmake --version
-# 期待される出力: cmake version 4.0.3-dirty
+# 期待される出力: cmake version 4.1.1-dirty
 # CMake suite maintained and supported by Kitware ([kitware.com/cmake](https://kitware.com/cmake)).
 
 ninja --version
@@ -800,14 +809,15 @@ clang --version
 
 # Linuxのみ
 echo $LLVM_MINGW_DIR
-# 期待される出力: /opt/llvm-mingw-20250709-ucrt-ubuntu-22.04-x86_64
+# 期待される出力: /opt/llvm-mingw-20250826-ucrt-ubuntu-22.04-x86_64
 </code></pre>
 
 
 </details>
 
 <h3 id="3">ステップ3: ビルドとインストール</h3>
-<p>ビルドスクリプトを実行します。このプロセスには5〜10分かかる場合があります。座してただ待つがいい</p>
+<p>ビルドスクリプトを実行します。<br />
+このプロセスには5〜10分かかる場合があります。  </p>
 <pre><code class="language-bash">./cc build --release --install
 </code></pre>
 <p>正常に完了すると、コンパイルされた成果物は<code>./out/install/{os}/{arch}/release/bin/</code>ディレクトリに配置されます。</p>
