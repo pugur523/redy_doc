@@ -691,7 +691,7 @@ cd redy
 1. Python(>= 3.13)を<a href="https://www.python.org/downloads/">公式サイト</a>の手順通りにインストールします。<br/>
 2. uvをインストールします:<br/>
 
-<pre><code class="language-bash">`pip install uv`
+<pre><code class="language-bash">pip install uv
 </code></pre>
 
 
@@ -717,7 +717,7 @@ source .venv/bin/activate
 詳しい手順
 </summary>
 
-<b>Ubuntu</b>
+<h4>Ubuntu</h4>
 
 
 <pre><code class="language-bash">sudo apt-get update
@@ -741,7 +741,7 @@ echo &quot;export LLVM_MINGW_DIR=${LLVM_MINGW_DIR}&quot; &gt;&gt; ~/.zshrc
 </code></pre>
 
 
-<b>Arch Linux</b>
+<h4>Arch Linux</h4>
 
 
 <pre><code class="language-bash">pacman -S --noconfirm \
@@ -767,16 +767,15 @@ yay -S --noconfirm libc++-with-libunwind
 </code></pre>
 
 
-<b>Windows</b>
+<h4>Windows</h4>
 
-1. [**Chocolatey**](https://chocolatey.org/install#individual)をインストールします。
-2. 管理者権限のPowerShellターミナルで、次のコマンドを実行します。  
+<a href="https://chocolatey.org/install#individual">Chocolatey</a>をインストールしてから、管理者権限つきで起動したPowerShellターミナルで、次のコマンドを実行します。<br/>
 
 <pre><code class="language-powershell">choco install -y nsis ninja nasm cmake llvm
 </code></pre>
 
 
-<b>macOS</b>
+<h4>macOS</h4>
 
 
 <pre><code class="language-bash">brew update
@@ -786,7 +785,7 @@ echo 'export PATH=&quot;$(brew --prefix lld@20)/bin:$PATH&quot;' &gt;&gt; ~/.bas
 </code></pre>
 
 
-<b>確認</b>
+<h4>依存関係の確認</h4>
 
 すべての必要なツールが正しくインストールされ、コマンドラインからアクセスできることを確認するために、以下のコマンドを実行します。
 

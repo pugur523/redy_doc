@@ -692,7 +692,7 @@ Installation Details
 
 2. Install uv:<br/>
 
-<pre><code class="language-bash">pip install uv.
+<pre><code class="language-bash">pip install uv
 </code></pre>
 
 
@@ -718,7 +718,7 @@ source .venv/bin/activate
 Installation Details
 </summary>
 
-### Ubuntu
+<h4>Ubuntu</h4>
 
 
 <pre><code class="language-bash">sudo apt-get update
@@ -742,7 +742,7 @@ echo &quot;export LLVM_MINGW_DIR=${LLVM_MINGW_DIR}&quot; &gt;&gt; ~/.zshrc
 </code></pre>
 
 
-### Arch Linux
+<h4>Arch Linux</h4>
 
 
 <pre><code class="language-bash">pacman -S --noconfirm \
@@ -768,16 +768,15 @@ yay -S --noconfirm libc++-with-libunwind
 </code></pre>
 
 
-### Windows
+<h4>Windows</h4>
 
-1. Install [**Chocolatey**](https://chocolatey.org/install#individual).
-2. Run the following command in an administrator PowerShell terminal:
+Install <a href="https://chocolatey.org/install#individual">Chocolatey</a>, and run the following command in administrator PowerShell terminal:
 
 <pre><code class="language-powershell">choco install -y nsis ninja nasm cmake llvm
 </code></pre>
 
 
-### macOS
+<h4>macOS</h4>
 
 
 <pre><code class="language-bash">brew update
@@ -787,7 +786,7 @@ echo 'export PATH=&quot;$(brew --prefix lld@20)/bin:$PATH&quot;' &gt;&gt; ~/.bas
 </code></pre>
 
 
-**Verification**
+<h4>Verification</h4>
 
 Ensure all required tools are correctly installed and accessible from the command line by running the following commands.
 
