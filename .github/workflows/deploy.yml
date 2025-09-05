@@ -5,9 +5,9 @@ on:
     branches:
       - "main"
     paths:
-      - "/doc/**"
-      - "/redy_lexer/**"
-      - "/.github/workflows/*.yml"
+      - "doc/**"
+      - "redy_lexer/**"
+      - ".github/workflows/*.yml"
   workflow_dispatch:
 
 permissions:
