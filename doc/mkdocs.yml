@@ -18,12 +18,26 @@ theme:
   features:
     - content.code.copy
     - content.code.select
+    - navigation.footer
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/pugur523
+    - icon: fontawesome/brands/x-twitter
+      link: https://twitter.com/p523n
+    # TODO: discord server
+    # - icon: fontawesome/brands/discord
+    #   link: https://discord.gg/
+copyright: Copyright &copy; 2025 pugur
 
 extra_css:
   - assets/css/style.css
 
-extra_javascript:
-  - assets/js/copy_button.js
+# extra_javascript:
+  # - assets/js/copy_button.js
+  # - assets/js/highlight.js
+  # - assets/js/redy.js
 
 plugins:
   - search:
@@ -38,17 +52,30 @@ plugins:
           build: true
 
 markdown_extensions:
+  - codehilite:
+      guess_lang: false
   - admonition
   - toc:
-      permalink: #
+      permalink:
   - pymdownx.highlight:
       use_pygments: true
       pygments_lang_class: true
       line_spans: __span
-      anchor_linenums: true
+      anchor_linenums: false
       auto_title: false
   - pymdownx.inlinehilite
   - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: redy
+          class: redy
+          format: !!python/name:pymdownx.superfences.fence_code_format
+        - name: ry
+          class: redy
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tasklist:
       custom_checkbox: true
       clickable_checkbox: true
+  - pymdownx.tabbed:
+      alternate_style: true

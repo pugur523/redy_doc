@@ -25,7 +25,7 @@ TBW...
 リポジトリとサブモジュールをクローンし、ディレクトリに移動します。
 
 ```bash
-git clone --depth 1 --recursive [https://github.com/pugur523/redy.git](https://github.com/pugur523/redy.git)
+git clone --depth 1 --recursive https://github.com/pugur523/redy.git
 cd redy
 ```
 

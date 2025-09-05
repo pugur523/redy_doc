@@ -5,11 +5,9 @@ on:
     branches:
       - "main"
     paths:
-      - "src/**"
-      - "/mkdocs.yml"
-      - "/pyproject.toml"
-      - "/uv.lock"
-      - ".github/workflows/*.yml"
+      - "/doc/**"
+      - "/redy_lexer/**"
+      - "/.github/workflows/*.yml"
   workflow_dispatch:
 
 permissions:
@@ -41,10 +39,10 @@ jobs:
         uses: astral-sh/setup-uv@v6
 
       - name: Install Python dependencies
-        run: uv sync
+        run: cd doc && uv sync
         shell: bash
 
       - name: Build and deploy to GitHub Pages
-        run: uv run mkdocs gh-deploy --force --clean --verbose
+        run: cd doc && uv run mkdocs gh-deploy --force --clean --verbose
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

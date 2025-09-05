@@ -292,6 +292,17 @@ wheels = [
 ]
 
 [[package]]
+name = "pygments-redy-lexer"
+version = "0.1.0"
+source = { directory = "../redy_lexer" }
+dependencies = [
+    { name = "pygments" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "pygments", specifier = ">=2.15" }]
+
+[[package]]
 name = "pymdown-extensions"
 version = "10.16.1"
 source = { registry = "https://pypi.org/simple" }
@@ -353,6 +364,7 @@ dependencies = [
     { name = "mkdocs" },
     { name = "mkdocs-material" },
     { name = "mkdocs-static-i18n" },
+    { name = "pygments-redy-lexer" },
 ]
 
 [package.metadata]
@@ -360,6 +372,7 @@ requires-dist = [
     { name = "mkdocs", specifier = ">=1.6.1,<2" },
     { name = "mkdocs-material", specifier = ">=9.6.16,<10" },
     { name = "mkdocs-static-i18n", specifier = ">=1.3.0" },
+    { name = "pygments-redy-lexer", directory = "../redy_lexer" },
 ]
 
 [[package]]

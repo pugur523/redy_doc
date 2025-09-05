@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pygments-redy-lexer"
+version = "0.1.0"
+description = "Pygments lexer for the redy programming language"
+authors = [{ name = "pugur", email = "pugurmc@gmail.com" }]
+requires-python = ">=3.13"
+dependencies = [
+    "pygments>=2.15",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/redy_lexer"]
+
+[project.entry-points."pygments.lexers"]
+redy = "redy_lexer.lexer:RedyLexer"

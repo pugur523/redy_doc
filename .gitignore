@@ -28,6 +28,7 @@ nohup.out
 __pycache__
 .pytest_cache/
 .mypy_cache/
+*.egg-info/
 
 # Editor and IDE configurations
 .vscode/

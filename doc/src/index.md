@@ -5,9 +5,9 @@
 
 ## Overview
 
-**redy** is a new programming language to achieve both high performance and robust memory safety.
+**redy** is a new programming language to achieve both high performance and robust safety.
 
-It emphasizes performance in all aspects, from reducing computation and memory usage to minimizing the size of compiled binaries, which is often overlooked in an era of abundant computing resources.
+It emphasizes performance in all aspects, including reducing computation, memory usage, and improving the cache hit rate, as well as minimizing the size of compiled binaries, which is often overlooked in an era of abundant computing resources.
 
 ---
 
@@ -29,7 +29,7 @@ Runtime costs, such as boundary checks, are minimized through various compile-ti
 
 ### No Lifetime Annotation Required
 
-The compiler uses a **Non-Lexical Constraint-Based Lifetime Checker**(**NLCBL**). This system is more flexible than Rust's while remaining safe. If the lifetime relationships are intuitive, the compiler can often infer them without requiring explicit annotations.
+The compiler uses **Control Flow Graph(CFG)** and **Static Single Assignment(SSA)** to do **Non-Lexical Constraint-Based Lifetime Checking**. This system is more flexible than Rust's while remaining safe. If the lifetime relationships are intuitive, the compiler can often infer them without requiring explicit annotations.
 
 
 ## Quick Start

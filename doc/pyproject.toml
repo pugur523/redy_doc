@@ -5,9 +5,10 @@ description = ""
 authors = [{ name = "pugur", email = "pugurmc@gmail.com" }]
 requires-python = ">=3.13"
 dependencies = [
-    "mkdocs-material>=9.6.16,<10",
-    "mkdocs-static-i18n>=1.3.0",
-    "mkdocs>=1.6.1,<2",
+  "mkdocs-material>=9.6.16,<10",
+  "mkdocs-static-i18n>=1.3.0",
+  "mkdocs>=1.6.1,<2",
+  "pygments-redy-lexer @ file:///${PROJECT_ROOT}/../redy_lexer",
 ]
 
 [tool.uv]
